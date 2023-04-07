@@ -1,0 +1,111 @@
+/* common property used in here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3F3D56;
+
+}
+header{
+    width: 100%;
+    padding: 0;
+    border-bottom: 3px solid #f2f3f5;
+   
+}
+
+.container-grab {
+    width: 90%;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #008AFF ;
+}
+
+.topics {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 15%;
+    float: left;
+   
+}
+
+.topics a  {
+   text-decoration: none;
+   
+}
+.topics a h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.topics a h2 span{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.menu {
+    width: 60%;
+    float: right;
+    margin-top: 5px;
+    
+}
+.menu ul{
+    list-style: none;
+    float: right;
+    margin-top: 13px;
+    
+}
+.menu ul li{
+    float: left;
+   
+    
+}
+
+.menu ul li:last-child a{
+    padding-right: 0;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 0 30px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: whitesmoke;
+    transition: .4s;
+   
+}
+.menu ul li a:hover{
+    color: #ffee00 ;
+}
+
+/* tooltip code */
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+
+/* footer section starts from here */
+.footer{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;   
+    background-color: #008AFF ; 
+}
+.footer p{
+    color: whitesmoke;
+   
+}
+.footer a{
+   text-decoration: none;
+   color:  yellow;
+   
+}
+.fa-copyright{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color:  yellow;
+}

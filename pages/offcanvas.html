@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tag starts -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- seo optimizer code will goes here -->
+
+    <!-- meta tag ends -->
+    <title>Offcanvas</title>
+    <!-- css link will goes here -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- This link will use for responsive purpose -->
+    <link rel="stylesheet" href="../css/media.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <!-- font awesome cdn -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header starts from here -->
+    <header>
+        <div class="container-grab w-100">
+            <!-- logo section starts here -->
+            <div class="topics">
+                <a href="../index.html"><h2>Bootstrap<span class="text-warning">5</span> </h2> </a>
+            </div>
+
+            <!-- logo container ends here -->
+
+            <!-- menu section starts here -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="nav.html">Nav & Tabs</a></li>
+                    <li><a href="offcanvas.html">Offcanvas</a></li>
+                    <li><a href="tooltip.html">Tooltips</a></li>
+                </ul>
+
+            </nav>
+
+            <!-- menu section ends here -->
+        </div>
+
+    </header>
+
+    <!-- header ends here -->
+<!-- main section starts from here -->
+<main>
+    <div class="container marginBottom">
+    <h1>Example</h1>
+
+    <h3>Offcanvas component</h3>
+    <p>Below is an offcanvas example that is shown by default (via .show on .offcanvas). Offcanvas includes support for a header with a close button and an optional body class for some initial padding. We suggest that you include offcanvas headers with dismiss actions whenever possible, or provide an explicit dismiss action.</p>
+</div>
+
+<!-- example 0 -->
+<div class="container">
+    <div class="offcanvas offcanvas-backdrop show text-bg-success" tabindex="-1" id="offcanvassuccess" aria-labelledby="offcanvasDarkLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-warning text-lg-center" id="offcanvasDarkLabel">Super Duper Offer</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvassuccess" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="text-bg-primary">If You are CR , You can join a Iftar party with Mentors.</p>
+        </div>
+      </div>
+</div>
+    <!-- Example 1 -->
+    <div class="container mb-lg-4">
+        <div class="col-lg-12">
+            <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-bg-danger" id="offcanvasLabel">Super Duper Offer</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    If You are CR , You can join a Iftar party with Mentors.
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- example 2 -->
+    <div class="container mb-lg-4 offset-5">
+    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Super Duper Offer</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>If You are CR , You can join a Iftar party with Mentors.</p>
+  </div>
+</div>
+</div>
+
+<!-- dark offcanvas -->
+<div class="container mb-lg-4">
+    <h1>Dark Offcanvas</h1>
+    <p>Change the appearance of offcanvases with utilities to better match them to different contexts like dark navbars. Here we add .text-bg-dark to the .offcanvas and .btn-close-white to .btn-close for proper styling with a dark offcanvas. If you have dropdowns within, consider also adding .dropdown-menu-dark to .dropdown-menu.</p>
+
+
+    <div class="offcanvas offcanvas-end show text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-bg-warning" id="offcanvasDarkLabel">Super Duper Offer</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="text-white">If You are CR , You can join a Iftar party with Mentors.</p>
+        </div>
+      </div>
+</div>
+
+<div class="container">
+    <div class="offcanvas offcanvas-top show text-bg-info" tabindex="-1" id="offcanvasinfo" aria-labelledby="offcanvasDarkLabel">
+        <div class="offcanvas-header   text-center">
+          <h5 class="offcanvas-title text-capitalize text-bg-dark" id="offcanvasDarkLabel">Super Duper Offer</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasinfo" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-capitalize text-center">
+          <p>If You are CR , You can join a Iftar party with Mentors.</p>
+        </div>
+      </div>
+</div>
+
+
+
+
+</main>
+
+<!-- main section  ends here -->
+
+
+    <!-- footer section starts from here -->
+ <div class="container-fluid g-0">
+    <footer class="footer">
+     <p><i class="fa-sharp fa-regular fa-copyright"></i>Copyright By <a href="https://www.facebook.com/ZabirHossain007" target="_blank">Zabir Hossain</a> All right Reserved @2023</p>
+   </footer>
+   </div>
+
+    <!-- js link will add here -->
+<!-- bootstrapbundle min js will link every time -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

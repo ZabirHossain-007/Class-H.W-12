@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tag starts -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- seo optimizer code will goes here -->
+
+    <!-- meta tag ends -->
+    <title>Tooltips</title>
+    <!-- css link will goes here -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- This link will use for responsive purpose -->
+    <link rel="stylesheet" href="../css/media.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <!-- font awesome cdn -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header starts from here -->
+    <header>
+        <div class="container-grab w-100">
+            <!-- logo section starts here -->
+            <div class="topics">
+                <a href="../index.html"><h2>Bootstrap<span class="text-warning">5</span> </h2> </a>
+            </div>
+
+            <!-- logo container ends here -->
+
+            <!-- menu section starts here -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="nav.html">Nav & Tabs</a></li>
+                    <li><a href="offcanvas.html">Offcanvas</a></li>
+                    <li><a href="tooltip.html">Tooltips</a></li>
+                </ul>
+
+            </nav>
+
+            <!-- menu section ends here -->
+        </div>
+
+    </header>
+
+    <!-- header ends here -->
+
+    <!-- Main section starts from here -->
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4 offset-2">
+            <button type="button" class="btn btn-info"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="World Wide Web!">
+ WWW
+</button>
+        </div>
+
+        <div class="col-lg-6">
+            <button type="button" class="btn btn-warning"
+        data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="United Nations International Children's Emergency Fund.">
+  UNICEF
+</button>
+        </div>
+    </div>
+</div>
+
+<!-- tooltip in different place -->
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-lg-4">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                Tooltip on top
+              </button>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4 offset-8">
+            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on Right">
+                Tooltip on Right
+              </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 offset-1">
+            <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                Tooltip on bottom
+              </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4 offset-5">
+            <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on Left">
+                Tooltip on left
+              </button>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Main section ends here -->
+
+
+    <!-- footer section starts from here -->
+ <div class="container-fluid g-0">
+    <footer class="footer">
+     <p><i class="fa-sharp fa-regular fa-copyright"></i>Copyright By <a href="https://www.facebook.com/ZabirHossain007" target="_blank">Zabir Hossain</a> All right Reserved @2023</p>
+   </footer>
+   </div>
+
+    <!-- js link will add here -->
+<!-- bootstrapbundle min js will link every time -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
